@@ -1,0 +1,42 @@
+modules = ["python-3.11"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Flask Server"
+
+[[workflows.workflow]]
+name = "Flask Server"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "LUMA_API_KEY='luma-b0f8caef-7e22-4584-8187-d233b412246e-47d37f4f-d7a1-434f-83fa-79e68cce9418' python main.py"
+waitForPort = 5000
+
+[deployment]
+run = ["sh", "-c", "LUMA_API_KEY='luma-b0f8caef-7e22-4584-8187-d233b412246e-47d37f4f-d7a1-434f-83fa-79e68cce9418' python main.py"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[agent]
+expertMode = true
