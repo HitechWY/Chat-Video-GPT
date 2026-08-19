@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="inspiration-gallery">
+    <h1>Video Inspiration Gallery</h1>
+    <p class="gallery-description">Browse through our curated collection of prompts and example videos to spark your creativity.</p>
+    
+    <div class="categories-container">
+        {% for category, prompts in categories.items() %}
+        <div class="category-card">
+            <h3>{{ category }}</h3>
+            <div class="prompt-list">
+                {% for prompt in prompts %}
+                <div class="prompt-item">
+                    <p>{{ prompt }}</p>
+                    <button class="use-prompt-btn" data-prompt="{{ prompt }}">
+                        <i class="ph ph-play"></i>
+                        Try this prompt
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

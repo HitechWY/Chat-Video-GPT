@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatVideoGPT - AI Video Generation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="top-nav">
+            <div class="branding">
+                <h1 class="logo">Chat Video GPT</h1>
+                <span class="subtext">by Homez24.com</span>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/gallery" class="nav-link">Gallery</a>
+                <a href="#" class="prompt-guide">Prompt Guide</a>
+            </div>
+        </nav>
+
+        <div class="landing-page">
+            <div class="hero-section">
+                <h1 class="main-title">Chat Video GPT</h1>
+                <p class="tagline">AI-Powered Video Generation</p>
+                <p class="description">Create stunning videos with natural language prompts. Our advanced AI understands context, motion, and storytelling to bring your ideas to life.</p>
+                <div class="feature-grid">
+                    <div class="feature">
+                        <i class="ph ph-brain"></i>
+                        <h3>Smart Understanding</h3>
+                        <p>Understands context and generates coherent video scenes</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-video-camera"></i>
+                        <h3>High Quality</h3>
+                        <p>Generate stunning 4K videos with smooth motion</p>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-lightning"></i>
+                        <h3>Fast Generation</h3>
+                        <p>Get your videos in minutes, not hours</p>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="showGenerator()">Try Now</button>
+            </div>
+        </div>
+
+        <div id="generator" class="hidden">
+            <div class="generator-container">
+                <div class="search-container">
+                    <select id="style-select" class="style-selector">
+                        <option value="cinematic">Cinematic (21:9)</option>
+                        <option value="anime">Anime Style</option>
+                        <option value="realistic">Photorealistic</option>
+                        <option value="artistic">Artistic</option>
+                        <option value="retro">Retro VHS</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select>
+                    <input type="text" id="prompt-input" placeholder="Describe your video...">
+                    <button id="generate-btn"><i class="ph ph-arrow-right"></i></button>
+                </div>
+                <div class="video-grid">
+                    <!-- Videos will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+
+        <div id="loading-overlay" class="hidden">
+            <img src="{{ url_for('static', filename='icons/loading.svg') }}" alt="Loading">
+            <p>Generating your video...</p>
+            <p id="generation-timer">Time elapsed: 0:00</p>
+        </div>
+        <footer class="footer">
+            All Rights Reserved © 2024-2025
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/api.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

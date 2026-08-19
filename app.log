@@ -1,0 +1,1286 @@
+2024-11-04 12:51:56,719 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 12:51:56,721 - werkzeug - INFO -  * Debugger PIN: 221-024-294
+2024-11-04 12:52:01,206 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 12:52:01,206 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 12:52:01,206 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 12:52:01,758 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 12:52:01,759 - werkzeug - INFO -  * Debugger PIN: 105-799-495
+2024-11-04 12:52:01,791 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:01] "GET / HTTP/1.1" 200 -
+2024-11-04 12:52:01,804 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:01] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 12:52:01,811 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:01] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 12:52:01,817 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:01] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:52:01,820 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:01] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 12:52:01,822 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:01] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 12:52:02,519 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:02] "GET / HTTP/1.1" 200 -
+2024-11-04 12:52:03,363 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:52:03,371 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:03] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:52:03,373 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:03] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:52:03,374 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:03] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:52:03,582 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 12:52:13,260 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:13] "GET / HTTP/1.1" 200 -
+2024-11-04 12:52:14,106 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:14] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:52:14,107 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:52:14,108 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:14] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:52:14,159 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:14] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:52:14,316 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:52:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 12:53:43,115 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 12:53:43,886 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 12:53:43,891 - app - INFO - Successfully initiated video generation: 6cf06b95-6c1e-45b9-8096-d337d0f09a49
+2024-11-04 12:53:43,891 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:53:43] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 12:53:49,105 - app - INFO - Checking status for video: 6cf06b95-6c1e-45b9-8096-d337d0f09a49
+2024-11-04 12:53:49,212 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/6cf06b95-6c1e-45b9-8096-d337d0f09a49 "HTTP/1.1 200 OK"
+2024-11-04 12:53:49,213 - app - INFO - Got video status: dreaming
+2024-11-04 12:53:49,213 - app - ERROR - Error checking video status: 'Generation' object has no attribute 'prompt'
+2024-11-04 12:53:49,213 - app - ERROR - Full traceback:
+Traceback (most recent call last):
+  File "/home/runner/AIVideoGenLanding/app.py", line 93, in video_status
+    'prompt': generation.prompt
+              ^^^^^^^^^^^^^^^^^
+  File "/home/runner/AIVideoGenLanding/.pythonlibs/lib/python3.11/site-packages/pydantic/main.py", line 856, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Generation' object has no attribute 'prompt'
+2024-11-04 12:53:49,220 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:53:49] "[35m[1mGET /video-status/6cf06b95-6c1e-45b9-8096-d337d0f09a49 HTTP/1.1[0m" 500 -
+2024-11-04 12:54:54,144 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-11-04 12:54:54,248 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 12:54:55,679 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 12:54:55,680 - werkzeug - INFO -  * Debugger PIN: 258-208-964
+2024-11-04 12:55:17,091 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 12:55:17,092 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 12:55:17,092 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 12:55:17,656 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 12:55:17,657 - werkzeug - INFO -  * Debugger PIN: 884-754-182
+2024-11-04 12:55:18,279 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET / HTTP/1.1" 200 -
+2024-11-04 12:55:18,301 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET / HTTP/1.1" 200 -
+2024-11-04 12:55:18,315 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 12:55:18,338 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 12:55:18,346 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:55:18,395 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 12:55:18,443 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:18] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 12:55:19,237 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:19] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:55:19,240 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:19] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:55:19,247 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:19] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:55:19,252 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:19] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:55:19,463 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:19] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:55:20,188 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:20] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:55:20,309 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:20] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:55:29,135 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:29] "GET / HTTP/1.1" 200 -
+2024-11-04 12:55:30,008 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:30] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:55:30,010 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:30] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:55:30,012 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:55:30,017 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:30] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:55:30,214 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 12:55:36,004 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 12:55:36,774 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 12:55:36,780 - app - INFO - Successfully initiated video generation: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:55:36,781 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:36] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 12:55:42,619 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:55:42,735 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:55:42,736 - app - INFO - Got video status: dreaming
+2024-11-04 12:55:42,736 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:42] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:55:46,991 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:55:47,040 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:55:47,042 - app - INFO - Got video status: dreaming
+2024-11-04 12:55:47,042 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:47] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:55:52,005 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:55:52,340 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:55:52,342 - app - INFO - Got video status: dreaming
+2024-11-04 12:55:52,342 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:52] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:55:57,016 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:55:57,057 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:55:57,058 - app - INFO - Got video status: dreaming
+2024-11-04 12:55:57,059 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:55:57] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:56:01,990 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:56:02,145 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:56:02,145 - app - INFO - Got video status: dreaming
+2024-11-04 12:56:02,146 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:56:02] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:56:06,991 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:56:07,030 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:56:07,031 - app - INFO - Got video status: dreaming
+2024-11-04 12:56:07,031 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:56:07] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:56:12,000 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:56:12,039 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:56:12,040 - app - INFO - Got video status: dreaming
+2024-11-04 12:56:12,040 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:56:12] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:56:17,001 - app - INFO - Checking status for video: ce6d2820-9094-4c78-800c-473f3b2e3bf9
+2024-11-04 12:56:17,360 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ce6d2820-9094-4c78-800c-473f3b2e3bf9 "HTTP/1.1 200 OK"
+2024-11-04 12:56:17,361 - app - INFO - Got video status: completed
+2024-11-04 12:56:17,361 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:56:17] "GET /video-status/ce6d2820-9094-4c78-800c-473f3b2e3bf9 HTTP/1.1" 200 -
+2024-11-04 12:57:30,375 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:30] "GET / HTTP/1.1" 200 -
+2024-11-04 12:57:30,626 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:57:30,694 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:30] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:57:30,831 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:30] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:57:30,900 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:30] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:57:31,036 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:31] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:57:31,751 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:31] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:57:31,973 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:57:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 12:58:49,168 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 12:58:49,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 12:58:49,168 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 12:58:49,780 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 12:58:49,782 - werkzeug - INFO -  * Debugger PIN: 253-319-642
+2024-11-04 12:58:50,606 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:58:50] "GET / HTTP/1.1" 200 -
+2024-11-04 12:58:50,834 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:58:50] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 12:58:51,059 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:58:51] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:58:51,448 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:58:51] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:58:51,450 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:58:51] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:58:51,657 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:58:51] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:59:01,591 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 12:59:01,591 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 12:59:01,592 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 12:59:02,159 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 12:59:02,160 - werkzeug - INFO -  * Debugger PIN: 597-431-460
+2024-11-04 12:59:02,596 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET / HTTP/1.1" 200 -
+2024-11-04 12:59:02,609 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 12:59:02,629 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 12:59:02,630 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 12:59:02,637 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 12:59:02,685 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET / HTTP/1.1" 200 -
+2024-11-04 12:59:02,702 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:02] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 12:59:03,541 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:59:03,551 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:03] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:59:03,552 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:03] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 12:59:03,552 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:03] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:59:03,761 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 12:59:14,103 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:14] "GET / HTTP/1.1" 200 -
+2024-11-04 12:59:14,972 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 12:59:14,974 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:14] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 12:59:14,975 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:14] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 12:59:14,976 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:14] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 12:59:15,187 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 12:59:32,166 - app - INFO - Creating video generation with prompt: create video for a car on the forest
+2024-11-04 12:59:32,956 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 12:59:32,962 - app - INFO - Successfully initiated video generation: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 12:59:32,962 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:32] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 12:59:38,176 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 12:59:38,311 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 12:59:38,312 - app - INFO - Got video status: dreaming
+2024-11-04 12:59:38,312 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:38] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 12:59:43,188 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 12:59:43,296 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 12:59:43,297 - app - INFO - Got video status: dreaming
+2024-11-04 12:59:43,298 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:43] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 12:59:48,805 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 12:59:48,915 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 12:59:48,916 - app - INFO - Got video status: dreaming
+2024-11-04 12:59:48,917 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:48] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 12:59:53,171 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 12:59:53,697 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 12:59:53,698 - app - INFO - Got video status: dreaming
+2024-11-04 12:59:53,699 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:53] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 12:59:58,800 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 12:59:59,067 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 12:59:59,069 - app - INFO - Got video status: dreaming
+2024-11-04 12:59:59,069 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 12:59:59] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 13:00:03,172 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 13:00:03,211 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 13:00:03,212 - app - INFO - Got video status: dreaming
+2024-11-04 13:00:03,213 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:03] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 13:00:08,174 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 13:00:08,222 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 13:00:08,223 - app - INFO - Got video status: dreaming
+2024-11-04 13:00:08,223 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:08] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 13:00:13,195 - app - INFO - Checking status for video: e880404d-34d4-44fa-9376-ca7cc00a83aa
+2024-11-04 13:00:13,275 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e880404d-34d4-44fa-9376-ca7cc00a83aa "HTTP/1.1 200 OK"
+2024-11-04 13:00:13,276 - app - INFO - Got video status: completed
+2024-11-04 13:00:13,276 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:13] "GET /video-status/e880404d-34d4-44fa-9376-ca7cc00a83aa HTTP/1.1" 200 -
+2024-11-04 13:00:44,058 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:44] "GET / HTTP/1.1" 200 -
+2024-11-04 13:00:44,312 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:44] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:00:44,386 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:44] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:00:44,533 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:44] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:00:44,590 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:44] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 13:00:44,737 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:00:44] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:06:20,798 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 13:06:20,798 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 13:06:20,799 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 13:06:21,385 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 13:06:21,386 - werkzeug - INFO -  * Debugger PIN: 768-474-650
+2024-11-04 13:06:22,165 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:22] "GET / HTTP/1.1" 200 -
+2024-11-04 13:06:23,011 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:23] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:06:23,066 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:23] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:06:23,844 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:23] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:06:23,845 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:23] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:06:23,846 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:23] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:06:33,879 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 13:06:33,879 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 13:06:33,879 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 13:06:34,481 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 13:06:34,483 - werkzeug - INFO -  * Debugger PIN: 917-720-496
+2024-11-04 13:06:34,517 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:34] "GET / HTTP/1.1" 200 -
+2024-11-04 13:06:34,583 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:34] "GET / HTTP/1.1" 200 -
+2024-11-04 13:06:34,838 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:34] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:06:34,902 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:34] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:06:34,950 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 13:06:35,133 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:06:35,134 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:06:35,161 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:06:35,339 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 13:06:35,600 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET / HTTP/1.1" 200 -
+2024-11-04 13:06:35,610 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:06:35,615 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 13:06:35,666 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 13:06:35,674 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 13:06:35,684 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:35] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:06:36,727 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:36] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 13:06:37,313 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 13:06:37,314 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:37] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:06:47,463 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:47] "GET / HTTP/1.1" 200 -
+2024-11-04 13:06:47,923 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 13:06:48,130 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:48] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:06:49,165 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:49] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:06:49,229 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:49] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:06:49,231 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:06:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 13:06:59,249 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 13:07:00,079 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 13:07:00,085 - app - INFO - Successfully initiated video generation: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:00,086 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:00] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 13:07:05,302 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:05,429 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:05,430 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:05,430 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:05] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:10,309 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:10,450 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:10,452 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:10,453 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:10] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:15,310 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:15,761 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:15,763 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:15,764 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:15] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:20,296 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:20,345 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:20,346 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:20,346 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:20] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:25,303 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:25,350 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:25,350 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:25,351 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:25] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:30,295 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:30,395 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:30,396 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:30,396 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:30] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:35,297 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:35,347 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:35,348 - app - INFO - Got video status: dreaming
+2024-11-04 13:07:35,349 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:35] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:07:40,552 - app - INFO - Checking status for video: fb699b04-fb6c-4667-b858-08e180046119
+2024-11-04 13:07:40,668 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fb699b04-fb6c-4667-b858-08e180046119 "HTTP/1.1 200 OK"
+2024-11-04 13:07:40,669 - app - INFO - Got video status: completed
+2024-11-04 13:07:40,669 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:07:40] "GET /video-status/fb699b04-fb6c-4667-b858-08e180046119 HTTP/1.1" 200 -
+2024-11-04 13:08:24,108 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:08:24] "GET / HTTP/1.1" 200 -
+2024-11-04 13:08:24,329 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:08:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 13:08:24,345 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:08:24] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:08:24,585 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:08:24] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:08:25,355 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:08:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 13:08:25,357 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:08:25] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:12:15,821 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 13:12:15,821 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 13:12:15,825 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 13:12:16,466 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 13:12:16,468 - werkzeug - INFO -  * Debugger PIN: 213-310-190
+2024-11-04 13:12:16,988 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:16] "GET / HTTP/1.1" 200 -
+2024-11-04 13:12:17,589 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:17] "GET / HTTP/1.1" 200 -
+2024-11-04 13:12:17,603 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:17] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:12:17,666 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:17] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 13:12:17,672 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:17] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 13:12:17,674 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:17] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 13:12:17,689 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:17] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:12:18,086 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:18] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:12:18,293 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:18] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:12:19,417 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:19] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:12:20,074 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:20] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:12:20,078 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:20] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:12:29,204 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:29] "GET / HTTP/1.1" 200 -
+2024-11-04 13:12:29,439 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 13:12:29,642 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:29] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:12:30,818 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:30] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:12:30,824 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:30] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:12:31,028 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 13:12:38,509 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:38] "GET / HTTP/1.1" 200 -
+2024-11-04 13:12:38,750 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:38] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:12:38,764 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:38] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:12:38,988 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:38] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:12:38,988 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:38] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:12:39,192 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:12:39] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:13:06,733 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 13:13:07,490 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 13:13:07,496 - app - INFO - Successfully initiated video generation: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:07,497 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:07] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 13:13:12,718 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:12,824 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:12,825 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:12,826 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:12] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:17,714 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:17,759 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:17,761 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:17,761 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:17] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:23,338 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:23,476 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:23,477 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:23,477 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:23] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:27,708 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:27,759 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:27,761 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:27,761 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:27] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:32,709 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:32,758 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:32,759 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:32,759 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:32] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:37,715 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:37,760 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:37,761 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:37,762 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:37] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:43,528 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:43,631 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:43,631 - app - INFO - Got video status: dreaming
+2024-11-04 13:13:43,632 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:43] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:13:48,336 - app - INFO - Checking status for video: e4ac1436-7117-4031-a199-c037ce773e9d
+2024-11-04 13:13:48,394 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e4ac1436-7117-4031-a199-c037ce773e9d "HTTP/1.1 200 OK"
+2024-11-04 13:13:48,395 - app - INFO - Got video status: completed
+2024-11-04 13:13:48,395 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:13:48] "GET /video-status/e4ac1436-7117-4031-a199-c037ce773e9d HTTP/1.1" 200 -
+2024-11-04 13:14:03,797 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:03] "GET / HTTP/1.1" 200 -
+2024-11-04 13:14:04,047 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 13:14:04,061 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:04] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:14:04,281 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:04] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:14:04,283 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:04] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:14:04,489 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 13:14:08,241 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 13:14:09,014 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 13:14:09,015 - app - INFO - Successfully initiated video generation: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:09,016 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:09] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 13:14:14,238 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:14,363 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:14,363 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:14,364 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:14] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:19,233 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:19,272 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:19,273 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:19,274 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:19] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:24,225 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:24,265 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:24,266 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:24,266 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:24] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:29,240 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:29,332 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:29,333 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:29,333 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:29] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:35,159 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:35,261 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:35,262 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:35,262 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:35] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:39,526 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:39,560 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:39,562 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:39,562 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:39] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:45,211 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:45,292 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:45,293 - app - INFO - Got video status: dreaming
+2024-11-04 13:14:45,293 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:45] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:14:49,232 - app - INFO - Checking status for video: 93d8b002-e6d3-496f-ab03-a8a1e8c5d752
+2024-11-04 13:14:49,264 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 "HTTP/1.1 200 OK"
+2024-11-04 13:14:49,264 - app - INFO - Got video status: completed
+2024-11-04 13:14:49,265 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:14:49] "GET /video-status/93d8b002-e6d3-496f-ab03-a8a1e8c5d752 HTTP/1.1" 200 -
+2024-11-04 13:18:49,490 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 13:18:49,491 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 13:18:49,492 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 13:18:50,069 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 13:18:50,070 - werkzeug - INFO -  * Debugger PIN: 114-788-001
+2024-11-04 13:18:50,678 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET / HTTP/1.1" 200 -
+2024-11-04 13:18:50,691 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:18:50,709 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 13:18:50,715 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:18:50,754 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET / HTTP/1.1" 200 -
+2024-11-04 13:18:50,772 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 13:18:50,793 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:50] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 13:18:51,621 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:51] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:18:51,622 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:51] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:18:51,626 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:51] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:18:51,627 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:51] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:18:51,835 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:18:51] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:19:02,530 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:19:02] "GET / HTTP/1.1" 200 -
+2024-11-04 13:19:02,762 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:19:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 13:19:02,771 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:19:02] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:19:02,772 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:19:02] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:19:02,773 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:19:02] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:19:02,987 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:19:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 13:20:46,953 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:46] "GET / HTTP/1.1" 200 -
+2024-11-04 13:20:47,211 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:47] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 13:20:47,225 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:47] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 13:20:47,424 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:47] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 13:20:47,429 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:47] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 13:20:47,629 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:47] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 13:20:52,229 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 13:20:52,981 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 13:20:52,987 - app - INFO - Successfully initiated video generation: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:20:52,987 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:52] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 13:20:58,207 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:20:58,387 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:20:58,388 - app - INFO - Got video status: dreaming
+2024-11-04 13:20:58,389 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:20:58] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:03,826 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:04,048 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:04,051 - app - INFO - Got video status: dreaming
+2024-11-04 13:21:04,051 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:04] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:08,194 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:08,274 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:08,277 - app - INFO - Got video status: dreaming
+2024-11-04 13:21:08,277 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:08] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:13,196 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:13,236 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:13,237 - app - INFO - Got video status: dreaming
+2024-11-04 13:21:13,237 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:13] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:18,205 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:18,251 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:18,252 - app - INFO - Got video status: dreaming
+2024-11-04 13:21:18,252 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:18] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:23,200 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:23,240 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:23,241 - app - INFO - Got video status: dreaming
+2024-11-04 13:21:23,241 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:23] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:28,215 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:28,257 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:28,258 - app - INFO - Got video status: dreaming
+2024-11-04 13:21:28,258 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:28] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 13:21:33,202 - app - INFO - Checking status for video: cca884e4-b08e-47fb-b463-035a5f5afb9a
+2024-11-04 13:21:33,243 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/cca884e4-b08e-47fb-b463-035a5f5afb9a "HTTP/1.1 200 OK"
+2024-11-04 13:21:33,243 - app - INFO - Got video status: completed
+2024-11-04 13:21:33,244 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 13:21:33] "GET /video-status/cca884e4-b08e-47fb-b463-035a5f5afb9a HTTP/1.1" 200 -
+2024-11-04 14:08:31,197 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 14:08:31,197 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 14:08:31,198 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:08:31,753 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:08:31,754 - werkzeug - INFO -  * Debugger PIN: 364-683-130
+2024-11-04 14:08:33,080 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:33] "GET / HTTP/1.1" 200 -
+2024-11-04 14:08:33,926 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:33] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:08:33,937 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:33] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:08:34,134 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:34] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:08:34,725 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:34] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:08:34,732 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:34] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 14:08:40,466 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:40] "GET / HTTP/1.1" 200 -
+2024-11-04 14:08:40,714 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:40] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:08:40,726 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:40] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:08:40,932 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:40] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:08:40,940 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:40] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:08:41,138 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:41] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:08:47,232 - app - INFO - Creating video generation with prompt: create video for a car on the beach
+2024-11-04 14:08:47,947 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 14:08:47,954 - app - INFO - Successfully initiated video generation: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:08:47,954 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:47] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 14:08:53,179 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:08:53,311 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:08:53,312 - app - INFO - Got video status: dreaming
+2024-11-04 14:08:53,313 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:53] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:08:58,960 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:08:59,077 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:08:59,079 - app - INFO - Got video status: dreaming
+2024-11-04 14:08:59,080 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:08:59] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:09:03,163 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:09:03,208 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:09:03,208 - app - INFO - Got video status: dreaming
+2024-11-04 14:09:03,209 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:09:03] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:09:08,796 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:09:08,909 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:09:08,910 - app - INFO - Got video status: dreaming
+2024-11-04 14:09:08,910 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:09:08] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:09:13,166 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:09:13,204 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:09:13,205 - app - INFO - Got video status: dreaming
+2024-11-04 14:09:13,205 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:09:13] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:09:18,790 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:09:18,979 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:09:18,980 - app - INFO - Got video status: dreaming
+2024-11-04 14:09:18,981 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:09:18] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:09:23,171 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:09:23,220 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:09:23,221 - app - INFO - Got video status: dreaming
+2024-11-04 14:09:23,221 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:09:23] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:09:28,171 - app - INFO - Checking status for video: c66a0264-5e17-4047-a935-16084a45fbef
+2024-11-04 14:09:28,217 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/c66a0264-5e17-4047-a935-16084a45fbef "HTTP/1.1 200 OK"
+2024-11-04 14:09:28,217 - app - INFO - Got video status: completed
+2024-11-04 14:09:28,218 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:09:28] "GET /video-status/c66a0264-5e17-4047-a935-16084a45fbef HTTP/1.1" 200 -
+2024-11-04 14:13:46,604 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/models.py', reloading
+2024-11-04 14:13:46,714 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:13:47,668 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:13:47,669 - werkzeug - INFO -  * Debugger PIN: 140-787-115
+2024-11-04 14:14:12,388 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-11-04 14:14:12,505 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:14:13,140 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:14:13,142 - werkzeug - INFO -  * Debugger PIN: 577-583-601
+2024-11-04 14:15:39,260 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 14:15:39,261 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 14:15:39,262 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:15:39,834 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:15:39,835 - werkzeug - INFO -  * Debugger PIN: 331-726-504
+2024-11-04 14:15:40,348 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:15:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-11-04 14:15:40,369 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:15:40] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-11-04 14:15:40,382 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:15:40] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-11-04 14:16:15,824 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-11-04 14:16:15,911 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:17:05,790 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 14:17:05,790 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 14:17:05,791 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:17:06,353 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:17:06,354 - werkzeug - INFO -  * Debugger PIN: 641-173-306
+2024-11-04 14:17:07,498 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:07] "GET / HTTP/1.1" 200 -
+2024-11-04 14:17:08,404 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:08] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:17:08,405 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:08] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:17:08,409 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:08] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:17:08,413 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:08] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:17:08,616 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:08] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:17:14,308 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:14] "GET / HTTP/1.1" 200 -
+2024-11-04 14:17:14,563 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:14] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:17:14,572 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:14] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:17:14,769 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:14] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:17:14,778 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:14] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:17:14,975 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:14] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:17:18,339 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:18] "GET / HTTP/1.1" 200 -
+2024-11-04 14:17:18,349 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:18] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:17:18,355 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:18] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 14:17:18,367 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:18] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 14:17:18,372 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:18] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:17:18,464 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:18] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:17:27,938 - app - INFO - Creating video generation with style artistic and prompt: Artistic interpretation with abstract elements: create video for a car on the forest
+2024-11-04 14:17:28,352 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "GET / HTTP/1.1" 200 -
+2024-11-04 14:17:28,362 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:17:28,391 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:17:28,391 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 14:17:28,392 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 14:17:28,400 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:17:28,790 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 14:17:28,847 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:28] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 14:17:29,932 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:29] "GET / HTTP/1.1" 200 -
+2024-11-04 14:17:30,978 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 14:17:31,186 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:31] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:17:31,396 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:31] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:17:31,405 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:31] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:17:31,624 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 14:17:34,674 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:17:34,810 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:17:34,811 - app - INFO - Got video status: dreaming
+2024-11-04 14:17:34,811 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:34] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:17:39,058 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:17:39,122 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:17:39,123 - app - INFO - Got video status: dreaming
+2024-11-04 14:17:39,124 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:39] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:17:44,681 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:17:44,806 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:17:44,807 - app - INFO - Got video status: dreaming
+2024-11-04 14:17:44,808 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:44] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:17:49,059 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:17:49,100 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:17:49,101 - app - INFO - Got video status: dreaming
+2024-11-04 14:17:49,101 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:49] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:17:55,175 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:17:55,326 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:17:55,327 - app - INFO - Got video status: dreaming
+2024-11-04 14:17:55,327 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:55] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:17:59,545 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:17:59,584 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:17:59,585 - app - INFO - Got video status: dreaming
+2024-11-04 14:17:59,586 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:17:59] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:18:05,178 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:18:05,286 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:18:05,287 - app - INFO - Got video status: dreaming
+2024-11-04 14:18:05,287 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:05] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:18:09,063 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-11-04 14:18:09,174 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:18:09,754 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:18:09,755 - werkzeug - INFO -  * Debugger PIN: 566-563-704
+2024-11-04 14:18:09,792 - app - INFO - Checking status for video: 90248324-1058-49e9-a0de-10c36e9734a2
+2024-11-04 14:18:09,921 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/90248324-1058-49e9-a0de-10c36e9734a2 "HTTP/1.1 200 OK"
+2024-11-04 14:18:09,927 - app - INFO - Got video status: completed
+2024-11-04 14:18:09,947 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:09] "GET /video-status/90248324-1058-49e9-a0de-10c36e9734a2 HTTP/1.1" 200 -
+2024-11-04 14:18:37,968 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 14:18:37,969 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 14:18:37,969 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:18:38,570 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:18:38,572 - werkzeug - INFO -  * Debugger PIN: 180-090-587
+2024-11-04 14:18:39,076 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET / HTTP/1.1" 200 -
+2024-11-04 14:18:39,105 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:18:39,128 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 14:18:39,132 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 14:18:39,132 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:18:39,141 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:18:39,416 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:39] "GET / HTTP/1.1" 200 -
+2024-11-04 14:18:40,267 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:40] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:18:40,269 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 14:18:40,272 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:40] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:18:40,273 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:40] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:18:40,481 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:40] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:18:51,029 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:51] "GET / HTTP/1.1" 200 -
+2024-11-04 14:18:51,865 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 14:18:51,866 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:51] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:18:51,880 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:51] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:18:51,889 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:51] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:18:52,089 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 14:18:56,347 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:56] "GET / HTTP/1.1" 200 -
+2024-11-04 14:18:56,604 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 14:18:56,615 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:56] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:18:56,810 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:56] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:18:56,821 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:56] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:18:57,013 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:18:57] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:22:18,446 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-11-04 14:22:18,536 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:25:35,850 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 14:25:35,850 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 14:25:35,851 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:25:36,438 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:25:36,439 - werkzeug - INFO -  * Debugger PIN: 677-869-867
+2024-11-04 14:25:37,041 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET / HTTP/1.1" 200 -
+2024-11-04 14:25:37,055 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:25:37,072 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 14:25:37,078 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:25:37,135 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 14:25:37,160 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 14:25:37,314 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:37] "GET / HTTP/1.1" 200 -
+2024-11-04 14:25:38,159 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:38] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:25:38,164 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:38] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:25:38,175 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:38] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:25:38,228 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:38] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:25:38,387 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:38] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:25:47,984 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:25:47] "GET / HTTP/1.1" 200 -
+2024-11-04 14:33:15,319 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.157:5000
+2024-11-04 14:33:15,319 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 14:33:15,320 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 14:33:15,917 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 14:33:15,918 - werkzeug - INFO -  * Debugger PIN: 119-599-344
+2024-11-04 14:33:16,968 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:16] "GET / HTTP/1.1" 200 -
+2024-11-04 14:33:17,817 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:17] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:33:17,831 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:17] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:33:17,879 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:17] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:33:17,930 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:17] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:33:18,056 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:18] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:33:24,842 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:24] "GET / HTTP/1.1" 200 -
+2024-11-04 14:33:25,090 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:25] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 14:33:25,101 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:25] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:33:25,306 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:25] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:33:25,333 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:25] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:33:25,510 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:25] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 14:33:46,822 - app - INFO - Creating video generation with style realistic and prompt: Photorealistic scene with natural lighting: make video for football player in the beach
+2024-11-04 14:33:48,265 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 14:33:48,333 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:48] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 14:33:48,537 - app - INFO - Creating video generation with style realistic and prompt: Photorealistic scene with natural lighting: make video for football player in the beach
+2024-11-04 14:33:49,158 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-11-04 14:33:49,172 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:49] "POST /generate-video HTTP/1.1" 200 -
+2024-11-04 14:33:53,553 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:33:53,613 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:33:53,614 - app - INFO - Got video status: dreaming
+2024-11-04 14:33:53,615 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:53] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:33:54,381 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:33:54,421 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:33:54,421 - app - INFO - Got video status: dreaming
+2024-11-04 14:33:54,422 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:54] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:33:58,561 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:33:58,600 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:33:58,602 - app - INFO - Got video status: dreaming
+2024-11-04 14:33:58,603 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:58] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:33:59,382 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:33:59,429 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:33:59,430 - app - INFO - Got video status: dreaming
+2024-11-04 14:33:59,430 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:33:59] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:34:03,549 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:34:03,589 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:34:03,590 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:03,590 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:03] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:34:04,389 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:34:04,450 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:34:04,450 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:04,451 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:04] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:34:08,542 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:34:08,582 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:34:08,583 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:08,583 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:08] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:34:09,397 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:34:09,436 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:34:09,437 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:09,438 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:09] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:34:13,544 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:34:13,585 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:34:13,586 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:13,586 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:13] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:34:14,388 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:34:14,429 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:34:14,429 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:14,430 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:14] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:34:18,545 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:34:18,592 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:34:18,593 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:18,593 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:18] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:34:19,388 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:34:19,428 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:34:19,429 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:19,430 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:19] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:34:23,557 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:34:23,624 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:34:23,624 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:23,625 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:23] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:34:24,380 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:34:24,418 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:34:24,419 - app - INFO - Got video status: dreaming
+2024-11-04 14:34:24,420 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:24] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:34:28,542 - app - INFO - Checking status for video: 79bba615-60b5-4586-8a8b-686f0e286f8d
+2024-11-04 14:34:28,586 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/79bba615-60b5-4586-8a8b-686f0e286f8d "HTTP/1.1 200 OK"
+2024-11-04 14:34:28,586 - app - INFO - Got video status: completed
+2024-11-04 14:34:28,628 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:28] "GET /video-status/79bba615-60b5-4586-8a8b-686f0e286f8d HTTP/1.1" 200 -
+2024-11-04 14:34:29,381 - app - INFO - Checking status for video: fdf4fbcd-9e3d-472a-8a92-0d5719350f53
+2024-11-04 14:34:29,427 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 "HTTP/1.1 200 OK"
+2024-11-04 14:34:29,428 - app - INFO - Got video status: completed
+2024-11-04 14:34:29,443 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:34:29] "GET /video-status/fdf4fbcd-9e3d-472a-8a92-0d5719350f53 HTTP/1.1" 200 -
+2024-11-04 14:43:54,165 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:43:54] "GET / HTTP/1.1" 200 -
+2024-11-04 14:43:54,412 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:43:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 14:43:54,617 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:43:54] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:43:55,076 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:43:55] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:43:55,086 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:43:55] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:43:55,284 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:43:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 14:56:01,188 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:56:01] "GET / HTTP/1.1" 200 -
+2024-11-04 14:56:02,500 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:56:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-11-04 14:56:02,734 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:56:02] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-11-04 14:56:03,023 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:56:03] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-11-04 14:56:03,078 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:56:03] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-11-04 14:56:03,599 - werkzeug - INFO - 172.31.196.157 - - [04/Nov/2024 14:56:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-11-04 18:02:13,422 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.105:5000
+2024-11-04 18:02:13,423 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-04 18:02:13,424 - werkzeug - INFO -  * Restarting with stat
+2024-11-04 18:02:13,990 - werkzeug - WARNING -  * Debugger is active!
+2024-11-04 18:02:13,991 - werkzeug - INFO -  * Debugger PIN: 104-988-535
+2024-11-04 18:02:16,684 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:16] "GET / HTTP/1.1" 200 -
+2024-11-04 18:02:16,937 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:16] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-11-04 18:02:17,174 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:17] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-11-04 18:02:17,616 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:17] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 18:02:17,727 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:17] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-11-04 18:02:17,826 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:17] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-11-04 18:02:18,520 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:18] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-11-04 18:02:18,648 - werkzeug - INFO - 172.31.196.105 - - [04/Nov/2024 18:02:18] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 09:58:55,742 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.97:5000
+2024-12-05 09:58:55,742 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-05 09:58:55,746 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 09:58:56,382 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 09:58:56,383 - werkzeug - INFO -  * Debugger PIN: 298-865-481
+2024-12-05 09:58:59,312 - werkzeug - INFO - 172.31.196.97 - - [05/Dec/2024 09:58:59] "GET / HTTP/1.1" 200 -
+2024-12-05 09:58:59,566 - werkzeug - INFO - 172.31.196.97 - - [05/Dec/2024 09:58:59] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 09:58:59,815 - werkzeug - INFO - 172.31.196.97 - - [05/Dec/2024 09:58:59] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 09:59:00,169 - werkzeug - INFO - 172.31.196.97 - - [05/Dec/2024 09:59:00] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 09:59:00,357 - werkzeug - INFO - 172.31.196.97 - - [05/Dec/2024 09:59:00] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 09:59:00,378 - werkzeug - INFO - 172.31.196.97 - - [05/Dec/2024 09:59:00] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:28:25,676 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.95:5000
+2024-12-05 14:28:25,678 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-05 14:28:25,682 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:28:26,394 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 14:28:26,396 - werkzeug - INFO -  * Debugger PIN: 516-421-239
+2024-12-05 14:28:27,291 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:28:27] "GET / HTTP/1.1" 200 -
+2024-12-05 14:28:27,542 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:28:27] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:28:27,749 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:28:27] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:28:28,144 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:28:28] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:28:28,313 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:28:28] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:28:28,365 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:28:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:31:44,551 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.95:5000
+2024-12-05 14:31:44,551 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-05 14:31:44,552 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:31:45,230 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 14:31:45,232 - werkzeug - INFO -  * Debugger PIN: 812-643-995
+2024-12-05 14:31:45,666 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET / HTTP/1.1" 200 -
+2024-12-05 14:31:45,685 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:31:45,692 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:31:45,699 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:31:45,701 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 14:31:45,796 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:31:45,855 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:45] "GET / HTTP/1.1" 200 -
+2024-12-05 14:31:46,335 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:46] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:31:46,548 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:46] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:31:46,777 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:46] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:31:46,972 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:31:46,974 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:46] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:31:48,835 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:48] "GET / HTTP/1.1" 200 -
+2024-12-05 14:31:51,490 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:31:51,704 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:51] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:31:51,909 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:51] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:31:51,910 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:51] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:31:52,162 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:31:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:32:04,734 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:04] "GET / HTTP/1.1" 200 -
+2024-12-05 14:32:04,992 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:04] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:32:05,218 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:05] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:32:05,424 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:05] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 14:32:05,622 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:05] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:32:05,633 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:05] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:32:10,147 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:32:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-05 14:34:07,795 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.95:5000
+2024-12-05 14:34:07,796 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-05 14:34:07,797 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:34:08,501 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 14:34:08,505 - werkzeug - INFO -  * Debugger PIN: 286-059-154
+2024-12-05 14:34:08,647 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:08] "GET / HTTP/1.1" 200 -
+2024-12-05 14:34:08,690 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:08] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:34:08,700 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:08] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 14:34:08,702 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:08] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:34:08,731 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:08] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:34:08,782 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:08] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:34:09,993 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:09] "GET / HTTP/1.1" 200 -
+2024-12-05 14:34:11,153 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:11] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:34:11,193 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:11] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:11,365 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:11,831 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:11] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:34:11,833 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:11] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:34:12,194 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:12] "GET / HTTP/1.1" 200 -
+2024-12-05 14:34:13,353 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:13] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:34:13,360 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:13] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:34:13,364 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:13] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:13,365 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:13] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:34:13,578 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:23,166 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:23] "GET / HTTP/1.1" 200 -
+2024-12-05 14:34:23,431 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:34:23,638 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:23] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:34:23,861 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:23] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:34:24,060 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:24] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:24,061 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:34,198 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:34] "GET / HTTP/1.1" 200 -
+2024-12-05 14:34:34,482 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:34:34,499 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:34] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:34:34,690 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:34] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:34:34,705 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:34] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:34:34,900 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:34:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:08,240 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.95:5000
+2024-12-05 14:37:08,241 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-05 14:37:08,243 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:37:09,022 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 14:37:09,024 - werkzeug - INFO -  * Debugger PIN: 103-622-306
+2024-12-05 14:37:09,133 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET / HTTP/1.1" 200 -
+2024-12-05 14:37:09,156 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:37:09,167 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 14:37:09,169 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:37:09,180 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:37:09,379 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:37:09,544 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET / HTTP/1.1" 200 -
+2024-12-05 14:37:09,792 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:09] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:37:10,034 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:10,398 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:37:10,485 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:10,607 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:10,704 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "GET / HTTP/1.1" 200 -
+2024-12-05 14:37:10,989 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:37:10,991 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:10] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:11,059 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:11] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:11,181 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:11] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:11,200 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:33,042 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:33] "GET / HTTP/1.1" 200 -
+2024-12-05 14:37:33,284 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:33] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:37:33,524 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:33] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:37:33,732 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:33] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 14:37:33,911 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:33] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:37:33,975 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:33] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:37:43,578 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:43] "GET /gallery HTTP/1.1" 200 -
+2024-12-05 14:37:43,828 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:43,855 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:43] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:43,999 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:43] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:44,000 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:53,504 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:53] "GET / HTTP/1.1" 200 -
+2024-12-05 14:37:53,761 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:53] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:53,970 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:53] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:37:54,183 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:54] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:37:54,389 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:54] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:37:54,392 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:37:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:40:47,240 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-12-05 14:40:47,441 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:40:49,293 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 14:40:49,295 - werkzeug - INFO -  * Debugger PIN: 114-329-652
+2024-12-05 14:40:52,520 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-12-05 14:40:52,684 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:42:18,151 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.95:5000
+2024-12-05 14:42:18,151 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-05 14:42:18,152 - werkzeug - INFO -  * Restarting with stat
+2024-12-05 14:42:18,921 - werkzeug - WARNING -  * Debugger is active!
+2024-12-05 14:42:18,923 - werkzeug - INFO -  * Debugger PIN: 225-491-423
+2024-12-05 14:42:19,254 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:19] "GET / HTTP/1.1" 200 -
+2024-12-05 14:42:19,313 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:19] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-05 14:42:19,378 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:19] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-05 14:42:19,437 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:19] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-05 14:42:19,439 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:19] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:42:19,491 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:19] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:42:21,251 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:21] "GET / HTTP/1.1" 200 -
+2024-12-05 14:42:21,467 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:21] "GET / HTTP/1.1" 200 -
+2024-12-05 14:42:21,678 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:21] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:21,713 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:21,930 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:21] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:22,091 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:22,137 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:42:22,138 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:42:22,345 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:42:22,348 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:42:22,349 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:42:22,566 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:42:40,337 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:40] "GET / HTTP/1.1" 200 -
+2024-12-05 14:42:40,571 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:40,778 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:40] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:40,982 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:40] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:42:41,186 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:41] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-05 14:42:41,392 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:41] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-05 14:42:45,338 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:45] "GET /gallery HTTP/1.1" 200 -
+2024-12-05 14:42:45,596 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:45,598 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:45] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:45,604 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:45] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:42:45,676 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:42:55,135 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:55] "GET / HTTP/1.1" 200 -
+2024-12-05 14:42:55,379 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:55,388 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:55] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:42:55,389 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:55] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:42:55,397 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:55] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:42:55,610 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:42:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:49:02,713 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:49:02] "GET / HTTP/1.1" 200 -
+2024-12-05 14:49:02,950 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:49:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:49:03,155 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:49:03] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:49:03,359 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:49:03] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:49:03,564 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:49:03] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:49:03,664 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:49:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-05 14:50:01,980 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:50:01] "GET / HTTP/1.1" 200 -
+2024-12-05 14:50:02,830 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:50:02] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-05 14:50:02,842 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:50:02] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-05 14:50:02,843 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:50:02] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-05 14:50:02,892 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:50:02] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-05 14:50:03,050 - werkzeug - INFO - 172.31.196.95 - - [05/Dec/2024 14:50:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-07 08:13:45,942 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.70:5000
+2024-12-07 08:13:46,108 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-07 08:13:46,115 - werkzeug - INFO -  * Restarting with stat
+2024-12-07 08:13:46,723 - werkzeug - WARNING -  * Debugger is active!
+2024-12-07 08:13:46,726 - werkzeug - INFO -  * Debugger PIN: 299-061-274
+2024-12-07 08:13:47,300 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:47] "GET / HTTP/1.1" 200 -
+2024-12-07 08:13:47,332 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:47] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:13:47,341 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:47] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:13:47,368 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:47] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:13:47,386 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:47] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:13:47,461 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:47] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:13:49,404 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:49] "GET / HTTP/1.1" 200 -
+2024-12-07 08:13:49,895 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:13:50,101 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:50] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:13:50,306 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:50] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:13:50,457 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:50] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:13:50,520 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-07 08:13:51,545 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:51] "GET / HTTP/1.1" 200 -
+2024-12-07 08:13:51,781 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:13:51,791 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:51] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:13:51,793 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:51] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:13:51,795 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:51] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:13:52,010 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:13:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-07 08:14:07,231 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:07] "GET / HTTP/1.1" 200 -
+2024-12-07 08:14:07,499 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:07] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:14:07,511 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:07] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:14:07,717 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:07] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:14:07,748 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:07] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:14:07,927 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:07] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:14:23,480 - app - INFO - Creating video generation with style cinematic and prompt: Cinematic scene with dramatic lighting and camera movement: make me video for the moon
+2024-12-07 08:14:24,340 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-12-07 08:14:24,347 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:24] "POST /generate-video HTTP/1.1" 200 -
+2024-12-07 08:14:30,209 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:30,353 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:30,353 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:30,354 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:30] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:14:34,562 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:34,597 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:34,599 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:34,599 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:34] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:14:40,251 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:40,358 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:40,359 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:40,359 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:40] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:14:44,564 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:44,673 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:44,674 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:44,675 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:44] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:14:49,564 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:49,604 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:49,605 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:49,605 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:49] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:14:55,193 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:55,343 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:55,344 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:55,344 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:55] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:14:59,560 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:14:59,603 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:14:59,604 - app - INFO - Got video status: dreaming
+2024-12-07 08:14:59,605 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:14:59] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:15:05,191 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:15:05,294 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:15:05,295 - app - INFO - Got video status: dreaming
+2024-12-07 08:15:05,296 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:15:05] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:15:10,483 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:15:10,601 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:15:10,602 - app - INFO - Got video status: dreaming
+2024-12-07 08:15:10,602 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:15:10] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:15:16,076 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:15:16,183 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:15:16,186 - app - INFO - Got video status: dreaming
+2024-12-07 08:15:16,187 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:15:16] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:15:20,449 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:15:20,486 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:15:20,486 - app - INFO - Got video status: dreaming
+2024-12-07 08:15:20,487 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:15:20] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:15:26,074 - app - INFO - Checking status for video: 57e753b1-cb4b-4d34-a19c-9c539ff12c93
+2024-12-07 08:15:26,222 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/57e753b1-cb4b-4d34-a19c-9c539ff12c93 "HTTP/1.1 200 OK"
+2024-12-07 08:15:26,223 - app - INFO - Got video status: completed
+2024-12-07 08:15:26,223 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:15:26] "GET /video-status/57e753b1-cb4b-4d34-a19c-9c539ff12c93 HTTP/1.1" 200 -
+2024-12-07 08:16:04,079 - app - INFO - Creating video generation with style cinematic and prompt: Cinematic scene with dramatic lighting and camera movement: video for the moon
+2024-12-07 08:16:04,791 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-12-07 08:16:04,792 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:04] "POST /generate-video HTTP/1.1" 200 -
+2024-12-07 08:16:10,008 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:10,158 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:10,159 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:10,159 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:10] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:15,632 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:15,751 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:15,752 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:15,752 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:15] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:20,012 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:20,050 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:20,051 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:20,051 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:20] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:25,629 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:25,729 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:25,730 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:25,731 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:25] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:30,013 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:30,049 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:30,050 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:30,050 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:30] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:35,628 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:35,761 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:35,762 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:35,762 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:35] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:40,008 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:40,049 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:40,049 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:40,050 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:40] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:45,018 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:45,060 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:45,061 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:45,061 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:45] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:50,014 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:50,066 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:50,066 - app - INFO - Got video status: dreaming
+2024-12-07 08:16:50,067 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:50] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:16:55,004 - app - INFO - Checking status for video: ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332
+2024-12-07 08:16:55,041 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 "HTTP/1.1 200 OK"
+2024-12-07 08:16:55,041 - app - INFO - Got video status: completed
+2024-12-07 08:16:55,042 - werkzeug - INFO - 172.31.196.70 - - [07/Dec/2024 08:16:55] "GET /video-status/ab9f5c6e-04c3-4eb3-95bb-3b9dd1f2f332 HTTP/1.1" 200 -
+2024-12-07 08:46:25,549 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.72:5000
+2024-12-07 08:46:25,550 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-07 08:46:25,554 - werkzeug - INFO -  * Restarting with stat
+2024-12-07 08:46:26,029 - werkzeug - WARNING -  * Debugger is active!
+2024-12-07 08:46:26,031 - werkzeug - INFO -  * Debugger PIN: 430-993-898
+2024-12-07 08:46:26,203 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:26] "GET / HTTP/1.1" 200 -
+2024-12-07 08:46:26,216 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:26] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:46:26,224 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:26] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:46:26,227 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:26] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:46:26,232 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:26] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:46:26,335 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:26] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:46:27,382 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:27] "GET / HTTP/1.1" 200 -
+2024-12-07 08:46:28,709 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:46:28,725 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:28] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:46:28,753 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:28] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:46:28,755 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:28] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:46:29,007 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:29] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:46:30,651 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:30] "GET / HTTP/1.1" 200 -
+2024-12-07 08:46:30,914 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:30] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:46:30,914 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:46:31,120 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:31] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:46:31,121 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:31] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:46:31,347 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-07 08:46:45,948 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:45] "GET / HTTP/1.1" 200 -
+2024-12-07 08:46:46,280 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:46] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:46:46,293 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:46] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:46:46,499 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:46] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:46:46,527 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:46] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:46:46,711 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:46:46] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:49:28,868 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.72:5000
+2024-12-07 08:49:28,868 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-07 08:49:28,869 - werkzeug - INFO -  * Restarting with stat
+2024-12-07 08:49:29,312 - werkzeug - WARNING -  * Debugger is active!
+2024-12-07 08:49:29,313 - werkzeug - INFO -  * Debugger PIN: 611-442-712
+2024-12-07 08:49:30,197 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:30] "GET / HTTP/1.1" 200 -
+2024-12-07 08:49:30,216 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:30] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:49:30,231 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:30] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:49:30,233 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:30] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:49:30,244 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:30] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:49:30,325 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:30] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:49:32,233 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:32] "GET / HTTP/1.1" 200 -
+2024-12-07 08:49:33,034 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,043 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,241 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "GET / HTTP/1.1" 200 -
+2024-12-07 08:49:33,472 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,473 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,500 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,679 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,679 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,706 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:49:33,714 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:49:33,912 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-07 08:49:54,232 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:54] "GET / HTTP/1.1" 200 -
+2024-12-07 08:49:54,491 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:54] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:49:54,736 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:54] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:49:54,944 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:54] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:49:55,115 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:55] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:49:55,152 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:55] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:49:58,535 - app - INFO - Creating video generation with style cinematic and prompt: Cinematic scene with dramatic lighting and camera movement: create video for a car on the beach
+2024-12-07 08:49:59,240 - httpx - INFO - HTTP Request: POST https://api.lumalabs.ai/dream-machine/v1/generations "HTTP/1.1 201 Created"
+2024-12-07 08:49:59,252 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:49:59] "POST /generate-video HTTP/1.1" 200 -
+2024-12-07 08:50:05,091 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:05,236 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:05,237 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:05,238 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:05] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:09,461 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:09,562 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:09,564 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:09,564 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:09] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:15,082 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:15,212 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:15,214 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:15,217 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:15] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:19,465 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:19,504 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:19,507 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:19,508 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:19] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:24,466 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:24,511 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:24,513 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:24,515 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:24] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:29,475 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:29,516 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:29,517 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:29,517 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:29] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:34,464 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:34,501 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:34,502 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:34,504 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:34] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:39,469 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:39,545 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:39,546 - app - INFO - Got video status: dreaming
+2024-12-07 08:50:39,546 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:39] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:44,480 - app - INFO - Checking status for video: e935e4e1-c9f1-4fc7-90fa-04310f7ec81c
+2024-12-07 08:50:44,518 - httpx - INFO - HTTP Request: GET https://api.lumalabs.ai/dream-machine/v1/generations/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c "HTTP/1.1 200 OK"
+2024-12-07 08:50:44,519 - app - INFO - Got video status: completed
+2024-12-07 08:50:44,519 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:44] "GET /video-status/e935e4e1-c9f1-4fc7-90fa-04310f7ec81c HTTP/1.1" 200 -
+2024-12-07 08:50:54,542 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:54] "GET / HTTP/1.1" 200 -
+2024-12-07 08:50:54,778 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:50:54,983 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:54] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:50:55,188 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:55] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:50:55,392 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:55] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:50:55,412 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:50:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-12-07 08:51:44,115 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-12-07 08:51:44,210 - werkzeug - INFO -  * Restarting with stat
+2024-12-07 08:51:44,832 - werkzeug - WARNING -  * Debugger is active!
+2024-12-07 08:51:44,835 - werkzeug - INFO -  * Debugger PIN: 810-663-745
+2024-12-07 08:51:51,123 - werkzeug - INFO -  * Detected change in '/home/runner/AIVideoGenLanding/app.py', reloading
+2024-12-07 08:51:51,184 - werkzeug - INFO -  * Restarting with stat
+2024-12-07 08:51:51,670 - werkzeug - WARNING -  * Debugger is active!
+2024-12-07 08:51:51,671 - werkzeug - INFO -  * Debugger PIN: 118-801-059
+2024-12-07 08:51:52,440 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.196.72:5000
+2024-12-07 08:51:52,440 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-07 08:51:52,441 - werkzeug - INFO -  * Restarting with stat
+2024-12-07 08:51:52,850 - werkzeug - WARNING -  * Debugger is active!
+2024-12-07 08:51:52,852 - werkzeug - INFO -  * Debugger PIN: 684-614-389
+2024-12-07 08:51:53,391 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:53] "GET / HTTP/1.1" 200 -
+2024-12-07 08:51:53,435 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:53] "GET /static/css/main.css HTTP/1.1" 200 -
+2024-12-07 08:51:53,454 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:53] "GET /static/icons/loading.svg HTTP/1.1" 200 -
+2024-12-07 08:51:53,467 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:53] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-12-07 08:51:53,505 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:53] "GET /static/css/animations.css HTTP/1.1" 200 -
+2024-12-07 08:51:53,509 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:53] "GET /static/js/api.js HTTP/1.1" 200 -
+2024-12-07 08:51:56,277 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:56] "GET / HTTP/1.1" 200 -
+2024-12-07 08:51:57,184 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2024-12-07 08:51:57,186 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:57] "[36mGET /static/css/animations.css HTTP/1.1[0m" 304 -
+2024-12-07 08:51:57,189 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:57] "[36mGET /static/icons/loading.svg HTTP/1.1[0m" 304 -
+2024-12-07 08:51:57,190 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:57] "[36mGET /static/js/api.js HTTP/1.1[0m" 304 -
+2024-12-07 08:51:57,407 - werkzeug - INFO - 172.31.196.72 - - [07/Dec/2024 08:51:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-02-19 12:07:49,216 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.128.71:5000
+2025-02-19 12:07:49,218 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-19 12:07:49,220 - werkzeug - INFO -  * Restarting with stat
+2025-02-19 12:07:49,709 - werkzeug - WARNING -  * Debugger is active!
+2025-02-19 12:07:49,711 - werkzeug - INFO -  * Debugger PIN: 838-722-944
+2025-02-19 12:08:56,587 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.128.71:5000
+2025-02-19 12:08:56,588 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-19 12:08:56,588 - werkzeug - INFO -  * Restarting with stat
+2025-02-19 12:08:57,130 - werkzeug - WARNING -  * Debugger is active!
+2025-02-19 12:08:57,133 - werkzeug - INFO -  * Debugger PIN: 112-698-285
+2025-02-20 13:01:31,105 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.128.50:5000
+2025-02-20 13:01:31,107 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-20 13:01:31,109 - werkzeug - INFO -  * Restarting with stat
+2025-02-20 13:01:31,573 - werkzeug - WARNING -  * Debugger is active!
+2025-02-20 13:01:31,583 - werkzeug - INFO -  * Debugger PIN: 281-173-064
